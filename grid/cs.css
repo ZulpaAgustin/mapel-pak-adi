@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #333;
+}
+
+.container{
+    width:80%;
+    background-color: white;
+    padding:20px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px auto;
+    grid-template-areas: "header header header header"
+    "article1 article2 article2 article3"
+    "head head head head"
+    "foto foto teks teks";
+    margin-top: 50px;
+}
+
+.header{grid-area: header;}
+.article1{grid-area: article1;}
+.article2{grid-area: article2;}
+.article3{grid-area: article3;}
+.head2{grid-area: head;}
+.gambar{grid-area: foto;}
+.text{grid-area: teks;}
+
+footer{
+    background-color: aquamarine;
+    position: sticky;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.gambar{
+    width: 50%;
+}
+
+header{
+    background-color: aqua;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
